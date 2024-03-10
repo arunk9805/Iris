@@ -11,6 +11,10 @@ const registerUser = asyncHandler( async (req, res)=> {
     // 6. create user object - create entry in database
     // 7. remove password and refresh token from response
     // 8. send response
+
+    const {fullName, email, username, password } = req.body
+    console.log("email: ", email);
+
 })
 
 
